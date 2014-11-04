@@ -1,0 +1,21 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/873419/Documents/GitHub/BncALM/BncALM/banca-a-la-mano/plugins/org.apache.cordova.device/src/tizen/DeviceProxy.js",
+        "C:/Users/873419/Documents/GitHub/BncALM/BncALM/banca-a-la-mano/plugins/org.apache.cordova.device/src/ubuntu/device.js",
+        "C:/Users/873419/Documents/GitHub/BncALM/BncALM/banca-a-la-mano/www/js/controladorPpal.js",
+        "C:/Users/873419/Documents/GitHub/BncALM/BncALM/banca-a-la-mano/plugins/org.apache.cordova.device/www/device.js",
+        "C:/Users/924306/Documents/GitHub/BncALM/banca-a-la-mano/plugins/org.apache.cordova.device/src/blackberry10/index.js",
+        "C:/Users/693197/Documents/GitHub/BncALM/banca-a-la-mano/plugins/org.apache.cordova.device/src/blackberry10/index.js",
+        "C:/Users/924306/Documents/GitHub/BncALM/banca-a-la-mano/plugins/org.apache.cordova.console/www/logger.js",
+        "C:/Users/924306/Documents/GitHub/BncALM/banca-a-la-mano/plugins/org.apache.cordova.console/www/console-via-logger.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/www/js/auxiliares/SocialSharing.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/www/js/auxiliares/textos.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/www/js/controladores/demoCtrl.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/plugins/org.apache.cordova.device/src/windows8/DeviceProxy.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/www/js/controladores/contenedorCtrl.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/www/js/controladores/controllers2Backup.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/www/js/servicios/timeoutSrvc.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/platforms/ios/www/plugins/org.apache.cordova.console/www/logger.js",
+        "C:/Users/924572/Documents/W/Proyectos/BALMApp/BncALM/banca-a-la-mano/www/js/app.js"
+    ]
+}

@@ -1,0 +1,33 @@
+<!--
+<ion-popover-view class="MenuCompartir" >
+    <ion-content class="has-header contenido-compartir">
+        <div class="item contenido-texto">
+            <p class="texto-compartir">
+                Comparte nuestra aplicación en las redes sociales. 
+            </p>
+        </div>  
+        <div class="item btn-compartir">
+            <alm-boton-icono boton="menucompartir.facebook" metodo="window.plugins.socialsharing.shareViaFacebook('Message via Facebook',null,null)"></alm-boton-icono>           
+        </div>
+        <div class="item btn-compartir">
+            <alm-boton-icono boton="menucompartir.twiter" metodo="window.plugins.socialsharing.shareViaTwitter('Messag')"></alm-boton-icono>
+        </div>        
+    </ion-content>
+</ion-popover-view>
+-->
+
+<ion-popover-view class="MenuCompartir" >
+    <ion-content class="has-header contenido-compartir" has-bouncing="false" padding="false">
+        <div class="item contenido-texto">
+            <p class="texto-compartir">
+                Comparte nuestra aplicación en las redes sociales. 
+            </p>
+        </div>  
+        <div class="item btn-compartir">
+            <alm-boton-icono boton="menucompartir.facebook" metodo="compartirFacebook()"></alm-boton-icono>           
+        </div>
+        <div class="item btn-compartir">
+            <alm-boton-icono boton="menucompartir.twiter" metodo="compartirTwitter()"></alm-boton-icono>
+        </div>
+    </ion-content>
+</ion-popover-view>

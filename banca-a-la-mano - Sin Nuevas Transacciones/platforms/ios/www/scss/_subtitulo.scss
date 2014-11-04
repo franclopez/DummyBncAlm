@@ -1,0 +1,77 @@
+/*
+ * Subtitulo Bancolombia
+ */
+
+@import 'bancolombia';
+
+alm-subtitulo{
+    background-color: $amarillo;
+    color: $amarillo-oscuro;
+    width: 100%;
+    
+    .Subtitulo{
+        background-color: inherit;
+        width: 100%;
+        //padding-bottom: 1em;
+        
+        .row{
+            padding-left: 0;
+            
+            .imagen{
+                background-color: inherit;
+                
+                .list-card{
+                    text-align: center;
+                    
+                    .item{
+                        background-color: inherit;    
+                        border-style: none;
+                        color: inherit;
+                        margin-top: 0.5em;
+                        padding: 0;
+                        .full-image{
+                            width: 60%;
+                        }
+                        p{
+                            color: inherit;
+                            margin-top: 0.25em;
+                        }
+                    }
+                }
+            }
+            
+            .textos{
+                .row{
+                    //margin-bottom: 0.5em;
+                }
+                
+                .row-top{
+                    .titulo{
+                        text-transform: uppercase;
+                    }
+                    .tituloFuerte{
+                        color: black;
+                        display: block;
+                        font-size: $font-size-large;
+                        font-weight: bolder;
+                    }
+                    
+                }
+                .row-center{
+                    margin-bottom: 0.5em;
+                }
+                .row-bottom{
+                    .contenidoFuerte{
+                        color: black;
+                        display: block;
+                        font-size: $font-size-large * 2;
+                        font-weight: bolder;
+                    }
+                    .contenidoSuave{
+                        
+                    }
+                }
+            }
+        }
+    }
+}

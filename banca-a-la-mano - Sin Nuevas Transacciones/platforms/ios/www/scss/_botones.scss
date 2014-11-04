@@ -1,0 +1,93 @@
+/*
+ * Botones Bancolombia
+ */
+
+@import 'bancolombia';
+
+.ion-navicon, .alm-iconMenu{
+    margin-left: -0.5em;
+}
+
+//Resets de la posicion a la derecha para el icono bancolombia
+.right-buttons{
+    right: 0px !important;
+}
+
+.bancolombia-boton{
+    padding-right: 0;
+    margin-right: 0;
+}
+
+//Icono de bancolombia en cabezera
+.bancolombia-icon{
+    &:before{
+        background: url('../img/alm-banco-corto.png') no-repeat 0 0;
+        background-size: 100%;
+        content: '';
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        padding: 0;
+    }
+}
+
+
+//Botones con forma de bancolombia
+.BALM{
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+    //font-size: 1.25em;
+    font-size: 14px;//$font-size-base
+    width: 10.5em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    padding: 1.25em 0;
+    
+    .fondo{
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.BALMIcono{
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;//$font-size-base
+    width: 10.5em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    padding: 1.25em 0;
+    
+    .fondo{
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    
+    .icono-boton{
+        &:before{
+            margin-right: 0.25em;
+            font-size: 1.75em;
+            vertical-align: top;
+        }
+    }
+}
+
+i.radio-icon.disable-pointer-events.icon.ion-checkmark{
+    &:before{
+        //color: $negro-claro;
+        color: $azul;
+    }
+}

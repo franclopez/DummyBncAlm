@@ -1,0 +1,33 @@
+<ion-view class="Intro">
+    <ion-content class="demo" scroll="false">
+        <button class="button  icon boton-despues" ng-click="demoDespues()">
+            <img src="img/demo/ver_despues.png">
+        </button>
+        <button class="button  icon boton-salir" ng-click="demoSalir()" >
+            <img src="img/demo/salir_del_demo.png">
+        </button>
+        <ion-slide-box on-slide-changed="slideChanged(index)" class="demo">
+            <ion-slide class="vista">
+                <div class="item contenido ">
+                    <div class="imagen">
+                        <img class="imgDemo" src="img/demo/demo1.1.png">
+                    </div>                  
+                </div>
+            </ion-slide>
+            <ion-slide class="vista">
+                <div class="item contenido ">
+                    <div class="imagen">
+                        <img class="imgDemo" src="img/demo/demo2.1.png">
+                    </div>                  
+                </div>
+            </ion-slide>
+            <ion-slide class="vista">
+               <div class="item contenido ">
+                    <div class="imagen">
+                        <img class="imgDemo" src="img/demo/demo3.1.png">
+                    </div>                  
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>    
+</ion-view>

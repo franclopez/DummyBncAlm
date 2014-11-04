@@ -1,0 +1,75 @@
+/*
+ * Mensaje exito - Bancolombia
+ */
+
+@import 'bancolombia';
+
+alm-mensaje-exito{
+    
+    width: 100%;
+    
+    .Mensaje-exito{
+        background-color: $amarillo;//#90ee90
+        width: 100%;
+        
+        .row{
+            
+            .imagen{
+                vertical-align: center;
+                
+                .list-card{
+                    text-align: center;
+                    
+                    .item{
+                        background-color: transparent;
+                        border-style: none;
+                        padding: 0;
+                        
+                        i{  
+                            background-color: transparent;
+                            color: $amarillo-oscuro !important;
+                            font-size: 5em;
+           
+                            &:before{
+                                color: $amarillo-oscuro !important;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .textos{
+                padding-bottom: 0;
+                
+                .row{
+                    text-align: left;
+                }
+                
+                .row-top{
+                    
+                    .titulo{
+                        color: $amarillo-oscuro !important;
+                        font-size: $font-size-base + 2;
+                        font-weight: bolder;
+                    }
+                }
+                .row-center{
+                    
+                    .subtitulo{
+                        color: $amarillo-oscuro !important;
+                        font-size: $font-size-base;
+                        margin-bottom: 0.5em;
+                    }
+                }
+                .row-bottom{
+                    .contenido{
+                        color: $amarillo-oscuro !important;
+                        display: block;
+                        font-size: $font-size-large * 2;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

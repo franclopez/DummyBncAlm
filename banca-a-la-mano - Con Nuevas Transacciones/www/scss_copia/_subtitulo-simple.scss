@@ -1,0 +1,59 @@
+/*
+ * Subtitulo-simple - Bancolombia
+ */
+
+@import 'bancolombia';
+
+alm-subtitulo-simple{
+    background-color: $amarillo;
+    color: $amarillo-oscuro;
+    width: 100%;
+    
+    .Subtitulo-simple{
+        background-color: inherit;
+        //padding-bottom: 1em;
+        width: 100%;
+        
+        .row{
+            text-align: left;
+            margin-left: 0.5em;
+            padding-left: 0;
+            
+            .textos{
+                margin-left: -1em;
+                .row{
+                    //margin-bottom: 0.5em;
+                }
+                
+                .row-top{
+                    .titulo{
+                        color: black;
+                        display: block;
+                        font-size: $font-size-large;
+                        font-weight: bolder;
+                        width: 100%;
+                    }
+                }
+                
+                .row-center{
+                    margin-bottom: 0.5em;
+                    margin-top: 0;
+                    width: 100%;
+                    .subtitulo{
+                        font-size: $font-size-base;
+                        width: 100%;
+                    }
+                }
+                .row-bottom{
+                    .contenidoFuerte{
+                        color: black;
+                        display: block;
+                        font-size: $font-size-large * 2;
+                        font-weight: bolder;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

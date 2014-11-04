@@ -1,0 +1,104 @@
+<ion-view title="Enviar dinero" hide-back-button="true" class="TransferenciaConfirmar">
+    <ion-content has-header="true" has-tabs="true">
+        <alm-subtitulo-mensaje></alm-subtitulo-mensaje>
+        <div class="transferencia-contenido">
+            <!--<alm-mensaje></alm-mensaje>-->
+            <alm-encabezado></alm-encabezado>
+            <div class="transferencia-resumen">
+                <div class="list transferencia-resumen-items">
+                    <ion-item class="item">
+                        <div class="row">
+                            <div class="col col-67">
+                                <div class="resumen-propiedad">
+                                    {{txts.resumen.costo}}
+                                </div>
+                            </div>
+                            <div class="col col-33">
+                                <div class="resumen-valor resumen-formato-pesos">
+                                    {{resumen.res.costTransfer}}
+                                </div>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="item">
+                        <div class="row">
+                            <div class="col col-67">
+                                <div class="resumen-propiedad">
+                                    {{txts.resumen.cuentaOrigen}}
+                                </div>
+                            </div>
+                            <div class="col col-33">
+                                <div class="resumen-valor resumen-formato-cuenta">
+                                    {{resumen.from.acctFrom.acctIdCorto}}<!--{{resumen.from.acctFrom.acctID}}-->
+                                </div>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="item">
+                        <div class="row">
+                            <div class="col col-67">
+                                <div class="resumen-propiedad">
+                                    {{txts.resumen.cuentaDestino}}
+                                </div>
+                            </div>
+                            <div class="col col-33">
+                                <div class="resumen-valor">
+                                    {{resumen.from.acctTo.acctId}}<!--{{resumen.from.accTo.acctID}}-->
+                                </div>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="item">
+                        <div class="row">
+                            <div class="col col-67">
+                                <div class="resumen-propiedad">
+                                    {{txts.resumen.tipoCuenta}}
+                                </div>
+                            </div>
+                            <div class="col col-33">
+                                <div class="resumen-valor">
+                                    {{resumen.from.acctTo.acctTypeCode}}
+                                </div>    
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="item">
+                        <div class="row">
+                            <div class="col col-67">
+                                <div class="resumen-propiedad">
+                                    {{txts.resumen.cantidadEnvio}}
+                                </div>
+                            </div>
+                            <div class="col col-33">
+                                <div class="resumen-valor"><!--resumen-formato-pesos-->
+                                    {{resumen.from.amount | currency}}
+                                </div>
+                            </div>
+                        </div>
+                    </ion-item>
+                </div>
+            </div>
+            <div class="transferencia-formulario">
+                <div class="list transferencia-formulario-items">
+                    <label class="item item-input item-stacked-label transferencia-formulario-item">
+                       <!--
+                       <span class="badge badge-energized">1</span>
+                       -->
+                        <span class="input-label-no-badge">{{txts.confirmacion}}</span>
+                        <input type="tel" tabindex="0" inputmode="numeric" placeholder="{{txts.confirmacionPlaceholder}}" ng-model="form.pin" class="alminputs" solo-numeros ng-minlength="{{minLength}}" ng-maxLength="{{maxLength}}">
+                    </label>
+                </div>
+            </div>
+        </div>
+  </ion-content>
+  <ion-footer-bar class="bar-light footer-alm">
+      <div class="row">
+            <div class="col col-50 centrado">
+                <alm-boton boton="botonConfirmar" metodo="confirmar('alm.transferencia-finalizar')"></alm-boton>
+            </div>
+            <div class="col col-50 centrado">
+                <alm-boton boton="botonCancelar" metodo="cancelar('alm.transferencia-realizar')"></alm-boton>
+            </div>
+        </div>
+  </ion-footer-bar>
+</ion-view>

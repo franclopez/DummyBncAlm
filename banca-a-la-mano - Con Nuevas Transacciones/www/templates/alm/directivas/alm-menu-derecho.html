@@ -1,0 +1,20 @@
+<ion-popover-view class="MenuPopover">
+    <ion-content class="has-header contenido-popover" has-bouncing="false" padding="false">
+        <div class="item boton-chat">
+             <alm-boton boton="menuderecho.chat" metodo="irAchat()"></alm-boton>
+        </div>
+        <div class="list lista-contactos">
+            <div class="item descripcion">
+                <p class="descripcion">
+                    Si tienes alguna inquietud por favor comunícate con nuestra Sucursal Telefónica.
+                </p>
+            </div>
+            <div  class="item item-icon-right item-contacto" ng-repeat="item in menuderecho.contactos">
+                <span class="sucursal">{{item.sucursal}} :</span>
+                <span class="telefono"> + {{item.telefono}}</span>
+                <a class="icon alm-iconPhone boton-contacto" href="tel:{{ item.telefono }}"></a>               
+            </div>
+        </div>
+        <div class="espacio"></div>
+    </ion-content>
+</ion-popover-view>

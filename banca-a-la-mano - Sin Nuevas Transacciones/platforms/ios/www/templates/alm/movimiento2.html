@@ -1,0 +1,45 @@
+<ion-view title="Consultar Movimientos" hide-back-button="true" class="Movimiento">
+  <ion-content has-header="true" padding="true" has-tabs="true">
+    <alm-subtitulo-limpio></alm-subtitulo-limpio>
+    <div class="estado-contenido">
+        <alm-separador></alm-separador>
+        <alm-encabezado></alm-encabezado>
+        <div class="filtro-fechas row">
+            <label class="col col-50 item item-input">
+                <span class="input-label">Fecha Inicial:</span>
+                <input type="date">
+            </label>
+
+            <label class="col col-50 item item-input cell">
+                <span class="input-label">Fecha Final:</span>
+                <input type="date">
+            </label>           
+        </div>         
+        <div class="lista-movimientos">
+            <ion-item class="item" ng-repeat="mov in movimientos" >
+                <div class="row">
+                    <div class="col col-75">
+                        <div class="informacion-movimiento">
+                            {{mov.informacion}}
+                        </div>
+                        <div class="concepto-movimiento">
+                            {{mov.concepto}}
+                        </div>
+                    </div>
+                    <div class="col col-25">
+                        <div class="valor-movimiento">
+                            {{mov.valor}}
+                        </div>
+                        <div class="fecha-movimiento">
+                            {{mov.fecha}}
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-light footer-alm">
+        <alm-boton boton="botonTransaccion" metodo="ir($event)"></alm-boton>
+    </ion-footer-bar>
+</ion-view>

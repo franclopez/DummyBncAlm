@@ -1,0 +1,129 @@
+/*
+ * Pagina - Estado de Cuenta, y Movimientos - Bancolombia
+ */
+
+@import 'bancolombia';
+
+
+.filtro-fechas {
+    background-color: $fondo-claro;
+    margin: 0;
+    padding: 0;
+    
+    .col {
+        background-color: $fondo;
+        border-radius: 0.3em;
+        margin: 0 0.2em 0 0.2em;
+        
+        .span {
+            display: block;
+            font-size: $font-size-small;
+            font-weight: bold;
+        }
+        
+        .icono-input {
+            &:before {
+                color: $azul;
+                display: inline-block;
+                font-size: 2em;
+                vertical-align: middle !important;
+            }
+        }
+        
+        .input-date {
+            display: inline-block;
+            padding: 0;
+            width: 80%;
+        }
+    }    
+}
+
+.boton-consultar {
+    background-color: $fondo-claro;
+    border-style: none;
+}
+
+.estado-contenido{
+    background-color: $fondo-claro !important;
+    font-size: $font-size-base;
+    padding-bottom: 2em;
+    
+    .acceso{
+        background-color: $gris;
+        border-radius: $radio-pequeno;
+        border-style: none;
+        margin: 0.25em 1em;
+        padding: 0.25em 1em;
+
+        .subtitulo-acceso, .contenido-acceso{
+            text-align: center;
+        }
+    }
+    
+    .lista-movimientos{
+        margin-left: -1em;
+        //margin-right: -1em;
+        
+        .item{
+            background-color: $fondo-claro !important;
+            border-color: $gris-claro;
+            padding-bottom: 0;
+            padding-top: 0;
+            
+            .row{
+                //line-height: $line-height-small;
+                padding-bottom: 0;
+                padding-top: 0;
+                
+                .col-75{
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+                
+                .col-25{
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                
+                .col{               
+                    
+                    .informacion-movimiento, .concepto-movimiento{
+                        text-align: left;
+                    }
+                    
+                    .concepto-movimiento, .fecha-movimiento{
+                        color: $gris-oscuro;
+                        font-size: $font-size-small + 2;
+                    }
+                    
+                    .informacion-movimiento, .valor-movimiento{
+                        padding-bottom: $line-height-small;
+                    }
+                    
+                    .valor-movimiento, .fecha-movimiento{
+                        text-align: right;
+                    }
+                    
+                    .informacion-movimiento{
+                        overflow: hidden;
+                        white-space: normal;
+                        width: 100% !important;
+                    }
+                    
+                    .concepto-movimiento{
+                        text-transform: capitalize;
+                    }
+                    
+                    .valor-movimiento{
+                        &:before{
+                            content: '$';
+                            margin-right: -0.25em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

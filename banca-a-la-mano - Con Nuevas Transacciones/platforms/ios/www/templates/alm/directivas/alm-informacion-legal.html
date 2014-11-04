@@ -1,0 +1,24 @@
+<ion-modal-view ng-controller="ModalInformacion"  class="modal-info-legal" >
+    <div class="list cabecera-info-legal">
+        <div class="item titulo-info-legal">
+            <span class="title titulo-info-legal">Información legal</span>
+        </div>        
+        <!--<alm-encabezado></alm-encabezado>-->                
+    </div>
+    <ion-content has-header="true" has-subheader="true" has-tabs="true" class="list" scroll="false">
+        <div class="item texto-informacion-legal">
+            <p class="texto-informacion-legal">
+                En Bancolombia App Ahorro a la Mano aplican los términos legales del reglamento para 
+                Sucursal Virtual Personas, así como las condiciones de uso, política de privacidad y 
+                seguridad de este canal. Igualmente, el reglamento para Cuentas de Trámite 
+                Simplificado Ahorro a la Mano.                 
+            </p>
+            <p class="texto-informacion-legal">
+                Puede consultarlos ingresando a nuestra página <a href="" ng-click="irALinkBancolombia()">www.grupobancolombia.com </a>.                                   <!--window.open('http://www.grupobancolombia.com', '_system', 'location=yes');-->
+            </p>
+        </div>
+        <div class="item boton-info-legal">
+            <alm-boton boton="boton" metodo="aceptar()"></alm-boton>
+        </div>
+    </ion-content>
+</ion-modal-view>

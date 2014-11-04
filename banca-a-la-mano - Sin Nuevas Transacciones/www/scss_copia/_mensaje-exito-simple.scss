@@ -1,0 +1,63 @@
+/*
+ * Mensaje exito - Bancolombia
+ */
+
+@import 'bancolombia';
+
+alm-mensaje-exito-simple{
+    
+    width: 100%;
+    
+    .Mensaje-exito-simple{
+        background-color: $fondo;
+        width: 100%;
+        
+        .row{
+            
+            .col{
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+            
+            .imagen{
+                vertical-align: center;
+                
+                .rojo{
+                    color: $rojo !important;
+                    &:before{
+                        color: $rojo !important;
+                    }
+                }
+                .verde{
+                    color: $verde !important;
+                    &:before{
+                        color: $verde !important;
+                    }
+                }
+                
+                .list-card{
+                    text-align: center;
+                    
+                    .item{
+                        background-color: transparent;
+                        border-style: none;
+                        padding: 0;
+                        
+                        i{  
+                            background-color: transparent;
+                            font-size: 5em;
+                        }
+                    }
+                }
+            }
+            
+            .textos{
+                color: $negro !important; 
+                display: block;
+                font-size: $font-size-base;
+                padding-top: 2em;
+                text-align: left;
+            }
+        }
+    }
+}

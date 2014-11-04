@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="co.com.tcs.bancolombia.bancaalamano" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Keyboard">
+        <param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="EncryptedStorage">
+        <param name="android-package" value="com.tcs.cordova.plugins.storage.EncryptedStorage" />
+    </feature>
+    <name>Ahorro a la Mano</name>
+    <description>
+       Bancolombia Ahorro a la Mano
+    </description>
+    <author email="hi@ionicframework" href="http://ionicframework.com/">
+        Ionic Framework Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <icon density="ldpi" platform="android" src="res/icons/android/ic_ldpi.png" />
+    <icon density="mdpi" platform="android" src="res/icons/android/ic_mdpi.png" />
+    <icon density="hdpi" platform="android" src="res/icons/android/ic_hdpi.png" />
+    <icon height="60" platform="ios" src="res/icons/ios/icon-60.png" width="60" />
+    <icon height="120" platform="ios" src="res/icons/ios/icon-60@2x.png" width="120" />
+    <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
+    <icon height="114" platform="ios" src="res/icons/ios/icon@2x.png" width="114" />
+    <cdv:splash src="res/screens/android/splash_mdpi.png" />
+    <cdv:splash cdv:platform="android" cdv:qualifier="mdpi" src="res/screens/android/splash_mdpi.png" />
+    <cdv:splash cdv:platform="android" cdv:qualifier="hdpi" src="res/screens/android/splash_hdpi.png" />
+    <cdv:splash cdv:platform="ios" height="480" src="res/screens/ios/Default.png" width="320" />
+    <cdv:splash cdv:platform="ios" height="960" src="res/screens/ios/Default@2x.png" width="640" />
+    <cdv:splash cdv:platform="ios" height="1136" src="res/screens/ios/Default-568h@2x.png" width="640" />
+</widget>

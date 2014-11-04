@@ -1,0 +1,19 @@
+<ion-view title="Retirar dinero" hide-back-button="true" class="contenedor-retiros">    
+    <ion-content has-header="true" has-subheader="true" has-tabs="true" class="contenido-retiros">
+        <div class="item  item-energized subheader-retiros">
+            <!--<h1 class="titulo-retiros">Retire dinero en cajeros electrónicos</h1>-->
+            <p class="contenido-retiros">
+                En esta opción puedes generar el PIN para retirar tu dinero, 
+                acércate a un Bancolombia a la Mano Corresponsal Bancario o 
+                a un Cajero Automático de Bancolombia.
+            </p>
+        </div> 
+        <div class="item imagenes ">
+            <div class="row img"><img src="img/retiros/Corresponsal.png"  class="imgBC"></div>
+            <div class="row img"><img src="img/retiros/Cajero.png" class="imgBC"></div>            
+        </div>
+    </ion-content>  
+    <ion-footer-bar class="footer-retirar">
+        <alm-boton boton="pin" metodo="generarPin()" class="img"></alm-boton>
+    </ion-footer-bar>
+</ion-view>

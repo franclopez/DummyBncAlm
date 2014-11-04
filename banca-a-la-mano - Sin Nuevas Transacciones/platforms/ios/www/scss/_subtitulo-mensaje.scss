@@ -1,0 +1,30 @@
+/*
+ * Subtitulo mensaje Bancolombia
+ */
+
+@import 'bancolombia';
+
+alm-subtitulo-mensaje{
+    background-color: $amarillo;
+    color: $amarillo-oscuro;
+    
+    
+    .Subtitulo-mensaje{
+        background-color: inherit;
+        color: inherit;
+        padding: 0 0 0 1em;
+        
+        .titulo{
+            font-size: $font-size-large;
+            font-weight: bolder;
+            text-align: left;
+            white-space: nowrap;
+        }
+        
+        .contenido{
+            padding-top: 0.5em;
+            text-align: left;
+            font-size: 1.25em;
+        }
+    }
+}

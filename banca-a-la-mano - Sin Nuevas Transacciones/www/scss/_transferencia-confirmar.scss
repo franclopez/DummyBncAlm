@@ -1,0 +1,105 @@
+/*
+ * Pagina - Transferencia de Cuenta / confirmacion - Bancolombia
+ */
+
+@import 'bancolombia';
+
+.transferencia-contenido{
+    padding-bottom: 2em;
+            
+    .transferencia-resumen{
+        
+        .transferencia-resumen-items{
+            border-style: none;
+            margin-bottom: 0.25em;
+            margin-top: 0.25em;            
+            padding-right: 0.25em;
+            
+            .item{
+                background-color: inherit;
+                border-bottom-color: $gris;
+                border-left-style: none;
+                border-right-style: none;
+                border-top-style: none;
+                border-width: 0.1;
+                margin-left: 1em;
+                margin-right: 1em;
+                padding-bottom: 0;
+                padding-top: 0;
+
+                .row{
+                    //line-height: $line-height-base;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                    
+                    .col-67{
+                        margin-right: 0;
+                        padding-right: 0;
+                    }
+                    
+                    .col{
+                        
+                        .resumen-propiedad, .resumen-valor{
+                            line-height: 1.428571429 !important;
+                        }    
+
+                        .resumen-propiedad{
+                            color: $negro-claro;
+                            text-align: left;
+                            overflow: visible;
+                            white-space: normal;
+                        }
+
+                        .resumen-valor{
+                            font-size: $font-size-small + 2;
+                            font-weight: bold;
+                            text-align: right;
+                        }
+
+                        .resumen-formato-cuenta{
+                            &:before{
+                                content: '*';
+                                margin-right: -0.25em;
+                            }
+                        }
+                        
+                        .resumen-formato-pesos{
+                            &:before{
+                                content: '$';
+                                margin-right: -0.25em;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    
+    .transferencia-formulario{
+        
+        .transferencia-formulario-items{
+        
+            .item{
+                @extend .sombraInputItem;
+            
+                .badge{
+                    display: inline;
+                    left: 0;
+                    margin-right: 1em;
+                    top: auto;
+                    width: 2em;
+                }
+
+                .input-label{
+                    font-size: 1em;
+                    margin-left: 1em;
+                }
+                
+                .input-label-no-badge{
+                    font-size: 1em;
+                    margin-left: 0;
+                }                
+            }
+        }
+    }
+}

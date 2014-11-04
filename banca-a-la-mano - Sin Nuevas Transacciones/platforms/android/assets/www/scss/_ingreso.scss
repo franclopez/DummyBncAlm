@@ -1,0 +1,144 @@
+/*
+ * Paginas - Ingreso de Usuario y Contrasenia - Ahorro a la Mano Bancolombia
+ */
+
+@import 'bancolombia';
+
+.contenido-ingreso {
+    background-color: $color-fondo;
+    font-size: $font-size-base;
+    
+    .texto-cabecera {
+        background-color: $color-fondo;
+        border-style: none;
+        padding-top: 0;
+        white-space: normal;
+        
+        .titulo-ingreso-cabecera {
+            color: $color-encabezado;
+            font-size: $font-size-large;
+            font-weight: bold;
+            white-space: normal;
+        }
+        
+        .parrafo-ingreso-cabecera {
+            text-align: left;
+            white-space: normal;
+        }
+        
+    }
+    
+    .label-input {
+        border-radius: 0.4em !important;
+        height: 3em;
+        
+        .icono-input {
+            padding: 0;
+            text-align: left;
+            width: 10%;
+            &:before {
+                color: $color-span-login !important;               
+            }
+        } 
+        
+        
+        .clave{
+            -webkit-text-security: disc;
+        }
+        
+        .input {
+            padding-right: 0 !important;
+            white-space: normal;
+        }
+        
+    }
+    
+    .legal {
+        background-color: $color-fondo;
+        border-style: none;
+        color: $color-encabezado;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: right;
+        text-decoration: underline;
+    }
+    
+    .boton{
+        background-color: $color-fondo;
+        border-style: none;
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    
+    .imagenes-bancolombia {
+        background-color: $color-fondo;
+        border: 0;
+        border-style: none;
+        padding-top: 0;
+        
+        .imagen {
+            padding-top: 0;
+            padding-bottom: 1em;
+            width: 90%;
+        }
+        
+        .slider-slide {
+            color: $color-encabezado;
+            text-align: center;
+        }
+        
+        .slider-pager {
+            bottom: 0.3em;
+            
+            .slider-pager-page {
+                
+                i {
+                    &:before {
+                        color: $color-encabezado;
+                    }                    
+                }
+                
+                
+            }            
+        }
+    }
+}
+
+//Zona Modal Información Legal
+
+.modal-info-legal {
+    background-color: $color-fondo !important;
+    border-radius: 0.4em !important;
+    left: 1.5em;
+    min-height: 10%;
+    top: 3.5em;
+    width: 90%;
+    
+    .cabecera-info-legal{
+         background-color: $color-fondo !important;
+    }
+    
+    .titulo-info-legal {
+        background-color: $color-fondo !important;
+        border-style: none;
+        font-weight: bold;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .texto-informacion-legal {
+        background-color: $color-fondo !important;
+        border-style: none;
+        text-align: left;
+        white-space: normal;
+    }
+    
+    .boton-info-legal {
+        background-color: $color-fondo !important;
+        border-style: none;
+        padding-top: 3em;
+    }
+}

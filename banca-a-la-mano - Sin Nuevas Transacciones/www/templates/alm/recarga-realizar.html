@@ -1,0 +1,55 @@
+<ion-view title="Recargar prepago" hide-back-button="true" class="RecargaRealizar">
+    <ion-content has-header="true" has-tabs="true">
+    <alm-subtitulo-simple></alm-subtitulo-simple>
+    
+    <div class="transferencia-contenido">
+        <!--
+        <alm-encabezado></alm-encabezado>
+        -->
+        <alm-mensaje></alm-mensaje>
+        <div class="transferencia-formulario">
+            <div class="list transferencia-formulario-items">
+                <label class="item item-input item-stacked-label transferencia-formulario-item">
+                   <span class="badge" 
+                         ng-class="{'badge-energized': recarga.numeroCelular != null && recarga.numeroCelular != '',
+                                   'badge-calm' : recarga.numeroCelular == null || recarga.numeroCelular == ''}">1</span>
+                    <span class="input-label">{{txts.babySteps.numeroCelular}}</span>
+                    <input type="tel" 
+                           tabindex="0" 
+                           inputmode="numeric"  
+                           class="alminputs" 
+                           ng-model="recarga.numeroCelular" 
+                           ng-maxLength="{{recarga.numero.maxLength}}" 
+                           maxLength="{{recarga.numero.maxLength}}"
+                           minLength="{{recarga.numero.minLength}}"
+                           ng-keydown="actualizarBoton()"
+                           solo-numeros>                   
+                </label>
+                <label class="item item-input item-stacked-label transferencia-formulario-item">
+                   <span class="badge" 
+                         ng-class="{'badge-energized': recarga.valorRecarga != null && recarga.valorRecarga != '',
+                                   'badge-calm' : recarga.valorRecarga == null || recarga.valorRecarga == ''}">2</span>
+                    <span class="input-label">{{txts.babySteps.valorRecargar}}</span>
+                    <input type="tel"  
+                           ng-model="recarga.valorRecarga" 
+                           class="alminputs"  
+                           ng-maxLength="{{recarga.numero.maxLength}}" 
+                           maxLength="{{recarga.numero.maxLength}}" 
+                           ng-keydown="actualizarBoton()" 
+                           solo-numeros>
+                </label>
+            </div>
+        </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-light footer-alm">
+    <div class="row">
+        <div class="col-50 centrado">
+            <alm-boton boton="botonRecarga" metodo="validarCampos('alm.recarga-confirmar')"></alm-boton>
+        </div>
+        <div class="col-50 centrado" >
+            <alm-boton boton="botonCancelar" metodo="cancelar('alm.estado')"></alm-boton>
+        </div>
+    </div>
+  </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,9 @@
+<div class="titulo-menu" ng-show="autorizado">Menú</div>
+<div class="list opciones-menu">
+    <a nav-clear menu-close class="item item-icon-left item-icon-right" ng-repeat="item in opciones" ng-click="ir(item.estado)">
+        <i class="icon alm-decoradoTitulos izquierda"></i>
+        <div class="row concepto">{{item.titulo}}</div>
+        <div class="row detalle">{{item.subtitulo}}</div>
+        <i class="icon alm-decoradoArrow derecha"></i>
+    </a>
+</div>

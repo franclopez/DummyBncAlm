@@ -1,0 +1,99 @@
+<ion-view title="Enviar dinero" hide-back-button="true" class="TransferenciaFinalizar">
+    <ion-content has-header="true" has-tabs="true">
+    <div class="transferencia-contenido">
+        <alm-mensaje-exito></alm-mensaje-exito>
+        <alm-separador></alm-separador>
+        <alm-encabezado ng-show="resumen.exito"></alm-encabezado>
+        <div class="transferencia-resumen" ng-show="resumen.exito">
+            <div class="list transferencia-resumen-items">
+                <ion-item class="item">
+                    <div class="row">
+                        <div class="col col-67">
+                            <div class="resumen-propiedad">
+                                {{txts.resumen.costo}}
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="resumen-valor resumen-formato-pesos">
+                                {{resumen.form.costTransfer}}
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="item">
+                    <div class="row">
+                        <div class="col col-67">
+                            <div class="resumen-propiedad">
+                                {{txts.resumen.cuentaOrigen}}
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="resumen-valor resumen-formato-cuenta">
+                                {{resumen.form.acctFrom.acctIdCorto}}<!--{{resumen.from.acctFrom.acctID}}-->
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="item">
+                    <div class="row">
+                        <div class="col col-67">
+                            <div class="resumen-propiedad">
+                                {{txts.resumen.cuentaDestino}}
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="resumen-valor">
+                                {{resumen.form.acctTo.acctId}}
+                                <!--{{resumen.form.acctTo.acctID}}-->
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="item">
+                    <div class="row">
+                        <div class="col col-67">
+                            <div class="resumen-propiedad">
+                                {{txts.resumen.tipoCuenta}}
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="resumen-valor">
+                                {{resumen.form.acctTo.acctTypeCode}}
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="item">
+                    <div class="row">
+                        <div class="col col-67">
+                            <div class="resumen-propiedad">
+                                {{txts.resumen.cantidadEnvio}}
+                            </div>
+                        </div>
+                        <div class="col col-33">
+                            <div class="resumen-valor"><!--resumen-formato-pesos-->
+                                {{resumen.form.amount | currency}}
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+            </div>
+        </div>
+    </div>
+  </ion-content>
+  <!--
+   <ion-footer-bar class="bar-light footer-alm">
+        <div class="row">
+            <div class="col-50 centrado">
+                <alm-boton boton="botonTransacciones" metodo="ir($event)"></alm-boton>
+            </div>
+            <div class="col-50 centrado">
+                <alm-boton boton="botonFinalizar" metodo="navegar('alm.estado')"></alm-boton>
+            </div>
+        </div>
+    </ion-footer-bar>
+    -->
+    <ion-footer-bar class="bar-light footer-alm footer-centrado">
+        <alm-boton boton="botonFinalizar" metodo="finalizar('alm.estado')"></alm-boton>
+    </ion-footer-bar>
+</ion-view>

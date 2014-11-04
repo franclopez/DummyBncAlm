@@ -1,0 +1,64 @@
+/*
+ * Modal - Contacto - Ahorro a la Mano Bancolombia
+ */
+
+@import 'bancolombia';
+
+.MenuPopover {
+    background-color: $color-fondo !important;
+    
+    .contenido-popover {
+        background-color: $color-fondo !important;
+        top: 0 !important;
+        
+        .boton-chat {
+            background-color: $color-fondo !important;
+            border-style: none;
+            margin: 0;
+        }
+        
+        .lista-contactos {
+            background-color: $color-fondo !important;
+            
+            .descripcion {
+                background-color: $color-fondo !important;
+                font-size: $font-size-base;
+                margin-top: 0;
+                padding-top: 0;
+                text-align: left;
+                white-space: normal;
+            }
+            
+            .item-contacto {
+                background-color: $color-fondo !important;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                
+                .sucursal {
+                    display: inline-block;
+                    font-size: $font-size-base;
+                    width: 40%;
+                }
+                
+                .telefono {
+                    display: inline-block;
+                    font-size: $font-size-base;
+                }
+                
+                .boton-contacto {
+                    color: $color-phone;
+                    font-size: 2.5em;
+                    margin-right: 5%;
+                    text-decoration: none;
+                }
+            }            
+        }  
+        
+        .espacio {
+            background-color: transparent;
+            height: 4em;
+            min-height: 4em;
+            max-height: 4em;
+        }
+    }
+}

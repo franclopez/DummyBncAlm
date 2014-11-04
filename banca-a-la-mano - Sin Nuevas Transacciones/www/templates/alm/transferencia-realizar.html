@@ -1,0 +1,51 @@
+<ion-view title="Enviar dinero" hide-back-button="true" class="TransferenciaRealizar">
+    <ion-content has-header="true" has-tabs="true">
+    <alm-subtitulo-simple></alm-subtitulo-simple>
+    
+    <div class="transferencia-contenido">
+        <!--
+        <alm-encabezado></alm-encabezado>
+        -->
+        <alm-mensaje></alm-mensaje>
+        <div class="transferencia-formulario">
+            <div class="list transferencia-formulario-items">
+                <label class="item item-input item-stacked-label transferencia-formulario-item">
+                   <span class="badge badge-energized">1</span>
+                    <span class="input-label">{{txts.babySteps.cuentaOrigen}}</span>
+                    <span class="formato-cuenta">{{acctDetl.acctID}}</span>
+                </label>
+                <label class="item item-input item-stacked-label transferencia-formulario-item">
+                   <span class="badge" ng-class="{'badge-energized': envioDinero.cuentaDestino != null && envioDinero.cuentaDestino != '', 'badge-calm' : envioDinero.cuentaDestino == null || envioDinero.cuentaDestino == ''}">2</span>
+                    <span class="input-label">{{txts.babySteps.cuentaDestino}}</span>
+                    <input type="tel" tabindex="0" inputmode="numeric" placeholder="{{txts.babySteps.cuentaDestinoPlaceholder}}" class="alminputs" ng-model="envioDinero.cuentaDestino" solo-numeros  ng-maxLength="{{envioDinero.cuenta.maxLength}}" maxLength="{{envioDinero.cuenta.maxLength}}" ng-keydown="validarNumeros()"><!--ng-pattern="patronValidacion"-->                    
+                  </label><!--ng-minLength="{{envioDinero.cuenta.minLength}}"-->
+                <label tabindex="1" class="item item-stacked-label transferencia-formulario-item"> 
+                  <span class="badge" ng-class="{'badge-energized': tipoCuentaValido == true , 'badge-calm' : tipoCuentaValido != true }">3</span> 
+                  <span class="input-label formulario-span-radio">{{txts.babySteps.seleccionCuenta}}</span>
+                  <div class="opciones">
+                      <ion-checkbox class="opcion" ng-repeat="radio in formularioRadio" ng-value="radio.valor" 
+                                    ng-model="radio.checked" ng-checked="radio.checked" ng-click="opcionar('{{ radio.id }}')" ng-keydown="actualizarBoton()"> 
+                          {{radio.contenido}}
+                      </ion-checkbox>  
+                  </div>
+                </label>
+                <label class="item item-input item-stacked-label transferencia-formulario-item">
+                   <span class="badge" ng-class="{'badge-energized': envioDinero.valorTransferir != null && envioDinero.valorTransferir != '', 'badge-calm' : envioDinero.valorTransferir == null || envioDinero.valorTransferir == ''}">4</span>
+                    <span class="input-label">{{txts.babySteps.valorTransferir}}</span>
+                    <input type="tel" placeholder="{{txts.babySteps.valorTransferirPlaceholder}}" ng-model="envioDinero.valorTransferir" class="alminputs" ng-minLength="{{envioDinero.valor.minLength}}" ng-maxLength="{{envioDinero.valor.maxLength}}" maxLength="{{envioDinero.valor.maxLength}}" ng-keydown="validarNumeros()" solo-numeros><!-- id="pesos" pesos-co pesos-after -->
+                </label>
+            </div>
+        </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-light footer-alm">
+    <div class="row">
+        <div class="col-50 centrado">
+            <alm-boton boton="botonTransaccion" metodo="validarCampos('alm.transferencia-confirmar')"></alm-boton>
+        </div>
+        <div class="col-50 centrado" >
+            <alm-boton boton="botonCancelar" metodo="cancelar('alm.estado')"></alm-boton>
+        </div>
+    </div>
+  </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,76 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"com.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"EncryptedStorage\"><param name=\"android-package\" value=\"com.tcs.cordova.plugins.storage.EncryptedStorage\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "co.com.tcs.bancolombia.bancaalamano"
+        },
+        "com.shazron.cordova.plugin.keychainutil": {
+            "PACKAGE_NAME": "co.com.tcs.bancolombia.bancaalamano"
+        },
+        "com.tcs.cordova.plugins.encryptedstorage": {
+            "PACKAGE_NAME": "co.com.tcs.bancolombia.bancaalamano"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "co.com.tcs.bancolombia.bancaalamano"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "co.com.tcs.bancolombia.bancaalamano"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "co.com.tcs.bancolombia.bancaalamano"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "co.com.tcs.bancolombia.bancaalamano"
+        }
+    },
+    "dependent_plugins": {}
+}

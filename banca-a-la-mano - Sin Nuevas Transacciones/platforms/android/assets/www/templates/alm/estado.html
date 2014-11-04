@@ -1,0 +1,54 @@
+<ion-view title="Saldo y Movimientos" hide-back-button="true" class="Estado">
+    <ion-content has-header="true" has-tabs="true"><!-- on-scroll="esconderBarra()" on-scroll-complete="mostrarBarra()"-->
+        <!--
+        <alm-mensaje></alm-mensaje>
+        -->
+        <!--Cambio botones man-->
+        <alm-subtitulo-limpio></alm-subtitulo-limpio>
+        <!---
+        <alm-boton boton="botonTransaccion" metodo="ir('alm.transferencia-realizar')"></alm-boton>
+        -->
+        <div class="estado-contenido">
+            <div class="acceso">
+                <div class="subtitulo-acceso">
+                    Tu último ingreso fue el: {{acceso.dateLastIn}}
+                </div>
+                <div class="contenido-acceso">
+                    IP: {{acceso.ipLastIn}}
+                </div>
+            </div>
+            <alm-encabezado></alm-encabezado>
+            <div class="lista-movimientos">
+                <ion-item class="item" ng-repeat="mov in movimientos" >
+                    <div class="row">
+                        <div class="col col-75">
+                            <div class="informacion-movimiento">
+                                {{mov.description}}
+                            </div>
+                            <!--
+                            <div class="concepto-movimiento">
+                                {{mov.concepto}}
+                            </div>
+                            -->
+                        </div>
+                        <div class="col col-25">
+                            <div class="valor-movimiento">
+                                {{mov.amount}}
+                            </div>
+                            <div class="fecha-movimiento">
+                                {{mov.date}}
+                            </div>
+                        </div>
+                    </div>
+                </ion-item>
+            </div>
+        </div>
+        <!--
+        <alm-boton boton="botonMovimiento" metodo="ir('alm.movimiento')"></alm-boton>
+        -->
+
+  </ion-content>
+    <ion-footer-bar class="bar-light footer-alm footer-centrado"><!-- ng-show="muestraOcultaBars"-->
+        <alm-boton boton="botonTransaccion" metodo="irATransacciones($event)"></alm-boton>
+    </ion-footer-bar>
+</ion-view>

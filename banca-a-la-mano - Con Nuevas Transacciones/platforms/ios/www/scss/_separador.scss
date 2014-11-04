@@ -1,0 +1,13 @@
+alm-separador{
+    background-color: transparent !important;
+    border-style: none;
+    border-width: 0;
+    display: block;
+    height: 2em;
+    min-height: 2em;
+    width: 100%;
+    
+    .item{
+        border-style: none;
+    }
+}

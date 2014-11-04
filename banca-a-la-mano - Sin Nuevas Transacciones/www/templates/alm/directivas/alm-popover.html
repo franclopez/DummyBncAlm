@@ -1,0 +1,34 @@
+<ion-popover-view class="MenuPopover">
+          <ion-content class="has-header">
+       xxx
+        <ion-list>
+            <ion-item ng-repeat="item in menuderecho" type="item-text-wrap">
+                <ion-item ng-repeat="tel in item.chat" type="item-text-wrap" href="{{tel.url}}">
+                    Chat en línea
+                </ion-item>
+                <ion-item ng-repeat="tel in item.telefono" type="item-text-wrap" href="{{tel.numero}}">
+                    {{tel.sede}} {{tel.numero}}
+                </ion-item>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-popover-view>
+<!--
+    <script id="popover.html" type="text/ng-template">
+    <ion-popover-view>
+        <ion-content class="has-header">
+           xxx
+            <ion-list>
+                <ion-item ng-repeat="item in menuderecho" type="item-text-wrap">
+                    <ion-item ng-repeat="tel in item.chat" type="item-text-wrap" href="{{tel.url}}">
+                        Chat en línea
+                    </ion-item>
+                    <ion-item ng-repeat="tel in item.telefono" type="item-text-wrap" href="{{tel.numero}}">
+                        {{tel.sede}} {{tel.numero}}
+                    </ion-item>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-popover-view>
+    </script>
+-->

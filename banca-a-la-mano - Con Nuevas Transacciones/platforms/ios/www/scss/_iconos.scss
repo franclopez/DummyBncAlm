@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'alm';
+	src:url('fonts/alm.eot?566ue9');
+	src:url('fonts/alm.eot?#iefix566ue9') format('embedded-opentype'),
+		url('fonts/alm.woff?566ue9') format('woff'),
+		url('fonts/alm.ttf?566ue9') format('truetype'),
+		url('fonts/alm.svg?566ue9#alm') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="alm-"], [class*=" alm-"] {
+	color: #ffffff;
+    font-family: 'alm';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.alm-babySteps:before {
+	content: "\e600";
+}
+.alm-boton:before {
+	content: "\e601";
+}
+.alm-decoradoArrow:before {
+	content: "\e602";
+}
+.alm-decoradoTitulos:before {
+	content: "\e603";
+}
+.alm-iconChat:before {
+	content: "\e604";
+}
+.alm-iconClose:before {
+	content: "\e605";
+}
+.alm-iconExit:before {
+	content: "\e606";
+}
+.alm-iconFB:before {
+	content: "\e607";
+}
+.alm-iconMenu:before {
+	content: "\e608";
+}
+.alm-iconPager:before {
+	content: "\e609";
+}
+.alm-iconPhone:before {
+	content: "\e60a";
+}
+.alm-iconShare:before {
+	content: "\e60b";
+}
+.alm-iconTick:before {
+	content: "\e60c";
+}
+.alm-iconTW:before {
+	content: "\e60d";
+}
+.alm-iconUser:before {
+	content: "\e60e";
+}

@@ -1,0 +1,50 @@
+<ion-view title="Bancolombia"  hide-back-button="true">
+    <ion-content has-header="true" has-tabs="true" class="contenido-ingreso">
+        <div class="list list-inset">
+            <div class="item texto-cabecera">
+                <!--
+                <p class="titulo-ingreso-cabecera">Ahorro a la Mano Bancolombia</p>
+                -->
+                <p class="parrafo-ingreso-cabecera">
+                    Envía dinero a otras cuentas Bancolombia, consulta el saldo y los movimientos de tu 
+                    cuenta Ahorro a la Mano sin ningún costo desde tu celular.
+                </p>
+            </div>
+            <label class="item item-input label-input">
+                <span class="input-label ion-ios7-locked-outline icono-input"></span>
+                <input type="tel" 
+                       ng-pattern="patronValidacion" 
+                       inputmode="numeric"
+                       class="input clave" 
+                       placeholder="Digita tu clave" 
+                       ng-model="credencial.clave" 
+                       ng-minLength="{{credencial.minLength}}" 
+                       ng-maxLength="{{credencial.maxLength}}" 
+                       maxLength="{{credencial.maxLength}}" 
+                       solo-numeros>
+            </label>
+        </div>
+        <div class="item boton">
+            <alm-boton boton="ingresar" metodo="autenticar('alm.estado')"></alm-boton>
+        </div>
+        <div class="item imagenes-bancolombia">
+            <ion-slide-box on-slide-changed="slideChanged(index)">                    
+                <ion-slide>
+                    <div id="imgALM1">
+                      <img class="imagen" src="img/bannerInicio/GaleriaFotosGrandes11.png">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div id="imgALM2">
+                      <img class="imagen" src="img/bannerInicio/GaleriaFotosGrandes8.png">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div id="imgALM3">
+                      <img class="imagen" src="img/bannerInicio/GaleriaFotosGrandes12.png">
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+        </div>        
+    </ion-content>  
+</ion-view>

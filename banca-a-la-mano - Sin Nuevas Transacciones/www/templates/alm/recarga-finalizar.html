@@ -1,0 +1,64 @@
+<ion-view title="Recargar prepago" hide-back-button="true" class="RecargaFinalizar">
+    <ion-content has-header="true" has-tabs="true">
+        <div class="transferencia-contenido">
+            <alm-mensaje-exito></alm-mensaje-exito>
+            <alm-separador></alm-separador>
+            <alm-encabezado ng-show="resumen.exito"></alm-encabezado>
+            <div class="transferencia-resumen" ng-show="resumen.exito">
+                <div class="list transferencia-resumen-items">
+                    <ion-item class="item">
+                        <div class="row">
+                            <div class="col col-67">
+                                <div class="resumen-propiedad">
+                                    {{txts.resumen.costo}}
+                                </div>
+                            </div>
+                            <div class="col col-33">
+                                <div class="resumen-valor resumen-formato-pesos">
+                                    0<!--{{resumen.form.costTransfer}}-->
+                                </div>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="item">
+                        <div class="row">
+                            <div class="col col-67">
+                                <div class="resumen-propiedad">
+                                    {{txts.resumen.numeroCelular}}
+                                </div>
+                            </div>
+                            <div class="col col-33">
+                                <div class="resumen-valor">
+                                    {{resumen.form.form.numCel}}
+                                </div>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="item">
+                        <div class="row">
+                            <div class="col col-67">
+                                <div class="resumen-propiedad">
+                                    {{txts.resumen.valorRecargar}}
+                                </div>
+                            </div>
+                            <div class="col col-33">
+                                <div class="resumen-valor"><!--resumen-formato-pesos-->
+                                    {{resumen.form.form.valor | currency}}
+                                </div>
+                            </div>
+                        </div>
+                    </ion-item>
+                </div>
+            </div>
+            <div class="item mensaje-error-transaccion" ng-show="!resumen.exito">
+                <p class="mensaje-instructivo">
+                    Se ha producido un error, por favor intente de nuevo más tarde.
+                </p>
+            </div>
+        </div>
+        
+    </ion-content>
+    <ion-footer-bar class="bar-light footer-alm footer-centrado">
+        <alm-boton boton="botonFinalizar" metodo="finalizar('alm.estado')"></alm-boton>
+    </ion-footer-bar>
+</ion-view>

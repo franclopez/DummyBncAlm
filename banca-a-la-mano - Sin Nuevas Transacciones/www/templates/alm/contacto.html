@@ -1,0 +1,17 @@
+<ion-view title="" hide-back-button="true" class="Contactenos">
+  <ion-content has-header="true" padding="true" has-tabs="true" class="contactenos">
+      <div class="item itemC">
+          <alm-boton boton="menuderecho.chat"></alm-boton>
+      </div>
+      <div class="list listC">
+          <div class="item itemC">
+              Si usted tiene alguna inquietud, por favor comuniquese con nuestras sucursales telefónicas.
+          </div>
+          <div class="item itemC item-icon-right contacto" ng-repeat="item in menuderecho.contactos">
+              <span class="sucursal">{{item.sucursal}} :</span>
+              <span class="telefono">{{item.telefono}}</span>
+              <button class="button button-balanced icon ion-android-call"></button>               
+          </div>
+      </div>
+  </ion-content>
+</ion-view>

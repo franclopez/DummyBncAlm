@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.tcs.cordova.plugins.encryptedstorage" version="0.0.1-SNAPSHOT">
+	<name>EncryptedStorage</name>
+	
+    
+
+    <js-module name="Encrypted" src="www/encryptedstorage.js">
+		<clobbers target="tcs.EncryptedStorage"/>
+	</js-module>
+    
+	<platform name="android">
+		<config-file parent="/widget" target="config.xml">
+			<feature name="EncryptedStorage">
+				<param name="android-package" value="com.tcs.cordova.plugins.storage.EncryptedStorage"/>
+			</feature>
+		</config-file>
+		<source-file src="android/libs/EncryptedStorage-android-0.0.1-SNAPSHOT.jar" target-dir="libs"/>
+	</platform>
+	
+</plugin>

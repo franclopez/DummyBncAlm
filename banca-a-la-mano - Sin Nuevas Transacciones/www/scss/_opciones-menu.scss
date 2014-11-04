@@ -1,0 +1,52 @@
+@import 'bancolombia';
+
+.opciones-menu{
+    background-color: inherit;
+
+
+    .item{
+        background-color: inherit;
+        line-height: 0.75em;
+
+        &:active{
+            background-color: $gris-claro;
+        }
+
+        .derecha{
+            color: $azul;
+            font-weight: bold;
+            margin-right: -0.25em !important;
+        }
+
+        .izquierda{
+            color: $amarillo;
+            margin-left: -0.5em;
+            margin-right: 0;
+        }
+
+        .row{
+            margin: 0 0 0 -1em;
+            padding: 0;
+            overflow-x: hidden;
+            text-align: left;
+        }
+
+        .concepto{
+            color: $negro;
+            padding-bottom: 0.25em;
+            padding-top: 0.25em;
+        }
+
+        .detalle{
+            color: $gris-oscuro;
+            font-size: $font-size-base;
+            line-height: 1em;
+            max-width: 120% !important;
+            padding-top: 0.25em;
+            text-align: justify;
+            white-space: normal;
+            width: 120% !important;
+        }
+    }
+}
+              

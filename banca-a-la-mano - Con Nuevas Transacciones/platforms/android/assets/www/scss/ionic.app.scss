@@ -1,0 +1,116 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "../lib/ionic/scss/ionic";
+
+//Iconos Bancolombia
+@import 'iconos', 'fuentes';
+
+@import 'menu-principal', 'menu-derecho', 'separador','cabezera', 'mensaje','mensaje-exito', 'mensaje-exito-simple', 'subtitulo-mensaje', 'botones', 'subtitulo', 'subtitulo-simple', 'subtitulo-semisimple', 'encabezado', 'subtitulo-limpio';
+
+@import 'estado', 'transferencia-realizar', 'transferencia-confirmar', 'transferencia-finalizar';
+@import 'ingreso', 'transacciones', 'retiros', 'contactenos', 'redes-sociales';
+
+@import 'demo';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'bancolombia';
+
+//Fuente base para todo el proyectos "TrebuchetMS"
+//Ya esta aderida en lib/ionic/scss/variables.scss
+$font-family-alm: $font-family-base !default;
+
+//Se resetea el padding por defecto del elemento ion-content
+ion-content{
+    background-color: $fondo-claro;
+    .padding{
+        background-color: $fondo-claro;
+        padding: 0 !important;
+    }
+}
+ion-nav-view{
+    font-size: $font-size-small;
+}
+
+//Se resetea el footer para todo el proyecto
+.bar.bar-stable {
+    border-color: transparent !important;
+}
+.bar.bar-light {
+    border-color: transparent !important;
+}
+.bar-footer {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    height: 7em !important;
+}
+alm-boton {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+footer-alm{
+    background-color: $fondo !important;
+    display: block !important;
+    text-align: center !important;
+}
+.col-50.centrado{
+    text-align: center !important;
+    min-width: 50% !important;
+    width: 50% !important;
+}
+.footer-centrado{
+    display: block;
+    text-align: center !important;
+    min-width: 100% !important;
+    width: 100% !important;
+}
+.item-divider-transparente{
+    background-color: transparent !important;
+}
+
+//Reset del estilo de los inputs, se debe aplicar la clase alminputs en el html input
+.alminputs{
+    //input[type="text"], input[type="tel"]
+    font-family: inherit;
+    border-bottom-color: $gris-claro !important;
+    border-left-color: $gris-claro !important;
+    border-radius: $radio-pequeno !important;
+    border-right-color: $gris-claro !important;
+    border-style: solid !important;
+    border-top-color: $gris !important;
+    border-width: thin !important;
+    line-height: 2em !important;
+    //margin-left: 2em !important;
+    padding: 1em !important;
+    //width: 90% !important;
+}
+.sombraInputItem{
+    -webkit-box-shadow: inset 0.02em -0.03em 0.1em 0.025em rgba($gris-oscuro,0.7);
+    -moz-box-shadow: inset 0.02em -0.03em 0.1em 0.025em rgba($gris-oscuro,0.7);
+    box-shadow: inset 0.02em -0.03em 0.1em 0.025em rgba($gris-oscuro,0.7);
+}
+//Reset para centrar el mensaje del dialogo de confirmar
+.popup-body {
+    text-align: center !important;
+}

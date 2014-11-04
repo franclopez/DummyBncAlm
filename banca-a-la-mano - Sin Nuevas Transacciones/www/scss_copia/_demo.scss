@@ -1,0 +1,85 @@
+/*
+ * Pagina - Introduccion - Ahorro a la Mano Bancolombia
+ */
+
+.Intro {
+    background-color: rgba(0,0,0,0.9) !important;    
+}
+
+.demo {
+    background-color: rgba(0,0,0,0.9) !important;
+    padding: 0;
+    top: 0;
+
+    .boton-despues{
+        background-color: transparent;
+        border-style: none;
+        bottom: 1em;
+        position: fixed;
+        left: 0;
+        z-index: 999999;
+        
+        img{
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    .boton-salir{ 
+        background-color: transparent;
+        border-style: none;
+        bottom: 1em;
+        position: fixed;
+        right: 0;
+        z-index: 999999;
+        
+        img{
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    .slider-pager {
+        position: absolute;
+        top: 20em;
+
+        .slider-pager-page {
+
+            i {
+                &:before {
+                    color: #ffffff;
+                    font-size: 14px;
+                }                    
+            }
+
+        }            
+    }
+    
+    .vista {
+        background-color:  #ffffff !important;
+        padding: 0;
+
+        .contenido {
+            background-color:  #ffffff !important;
+            border-style: none;
+            padding: 0;
+
+            .imagen {
+                background-color: rgba(0,0,0,0.9) !important;
+                .imgDemo {
+                    background-color: rgba(0,0,0,0.9) !important;
+                    width: 100%;
+                }  
+            }            
+
+        }
+    }
+}

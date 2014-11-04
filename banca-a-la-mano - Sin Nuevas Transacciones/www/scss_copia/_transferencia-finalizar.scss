@@ -1,0 +1,87 @@
+/*
+ * Pagina - Transferencia de Cuenta - finalizar - Bancolombia
+ */
+
+@import 'bancolombia';
+
+
+.transferencia-contenido{
+    background-color: $fondo-claro;
+    padding-bottom: 2em;
+    
+    .transferencia-resumen{
+        
+        .transferencia-resumen-items{
+            border-style: none;
+            margin-bottom: 0.25em;
+            margin-top: 0.25em;
+            margin-left: -1em;
+            margin-right: -1em;
+            padding-right: 0.25em;
+            
+            .item{
+                background-color: inherit;
+                border-color: $gris-claro;
+                border-width: 0.1;
+                padding: 0;
+
+                .row{
+                    //line-height: $line-height-small;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                    
+                    .col-67{
+                        margin-right: 0;
+                        padding-right: 0;
+                    }
+                    
+                    .col{
+                        .resumen-propiedad, .resumen-valor{
+                            line-height: 1.428571429; //$line-height-small
+                        }
+
+                        .resumen-propiedad{
+                            color: $negro-claro;
+                            text-align: left;
+                        }
+
+                        .resumen-valor{
+                            font-size: $font-size-small + 2;
+                            font-weight: bold;
+                            text-align: right;
+                        }
+
+                        .resumen-formato-cuenta{
+                            &:before{
+                                content: '*';
+                                margin-right: -0.25em;
+                            }
+                        }
+                        
+                        .resumen-formato-pesos{
+                            &:before{
+                                content: '$';
+                                margin-right: -0.25em;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    
+    .mensaje-error-transaccion{
+        font-size: $font-size-base;
+        background-color: inherit;
+        text-align: center;
+        border-style: none;
+        
+        .mensaje-instructivo{
+            background-color: inherit;
+            border-style: none;
+            padding: 0.5em 0.5em 0 0.5em;
+            text-align: left;
+            white-space: normal;
+        }
+    }
+}

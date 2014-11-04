@@ -1,0 +1,17 @@
+<div class="MenuPopup">
+    <div class="has-header contenidoPopup">
+        <div class="item botonChat">
+              <alm-boton boton="menuderecho.chat"></alm-boton>
+        </div>
+        <div class="list listaContactos">
+            <div class="item descripcion">
+                Si usted tiene alguna inquietud, por favor comuniquese con nuestras sucursales telefónicas.
+            </div>
+            <div  class="item item-icon-right itemContanto" ng-repeat="item in menuderecho.contactos">
+                <span>{{item.sucursal}} :</span>
+                <span>{{item.telefono}}</span>
+                <button class="button button-balanced icon ion-android-call botonContacto"></button>               
+            </div>
+        </div>
+    </div>
+</div>

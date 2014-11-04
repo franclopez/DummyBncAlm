@@ -1,0 +1,19 @@
+<ion-view title="Retirar dinero" hide-back-button="true" class="contenedor-retiros">
+    <ion-content has-header="true" has-subheader="true" has-tabs="true">
+        <div class="list mensaje-retiro-finalizar">
+            <alm-mensaje-exito-simple></alm-mensaje-exito-simple>
+            <alm-separador></alm-separador>
+            <div class="item mensaje-instructivo" ng-show="retiro.exito">
+                <p class="mensaje-instructivo">
+                    Se ha enviado el PIN en un mensaje de texto a tu celular. Este PIN tiene una duración de 30 minutos.
+                </p>
+                <p class="mensaje-instructivo">
+                    Acércate a un Bancolombia a la Mano Corresponsal Bancario o Cajero Automático Bancolombia, elige la opción Ahorro a la Mano y sigue las instrucciones.
+                </p>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="footer-retirar">
+        <alm-boton boton="btnFinalizar" metodo="finalizar('alm.estado')"></alm-boton>
+    </ion-footer-bar>
+</ion-view>

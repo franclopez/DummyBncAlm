@@ -1,0 +1,31 @@
+/*
+ * Mensaje Bancolombia
+ */
+
+@import 'bancolombia';
+
+alm-mensaje{
+    margin-bottom: 0.25em;
+    width: 100%;
+    
+    .Mensaje{
+        background-color: inherit;
+        color: inherit;
+        padding: 0 1em;
+        
+        .titulo{
+            font-size: $font-size-large;
+            font-weight: bolder;
+            text-align: left;
+        }
+        
+        .contenido{
+            padding-top: 0.5em;
+            text-align: left;
+            font-size: 1.25em;
+        }
+    }
+}
+
+
+

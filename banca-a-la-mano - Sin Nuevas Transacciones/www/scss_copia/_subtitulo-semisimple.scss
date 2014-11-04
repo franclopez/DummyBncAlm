@@ -1,0 +1,90 @@
+/*
+ * Subtitulo-semisimple - Bancolombia
+ */
+
+@import 'bancolombia';
+
+alm-subtitulo-semisimple{
+    font-size: $font-size-base;
+    //margin-top: 5em;
+    margin-top: 0;
+    width: 100%;
+    
+    .Subtitulo-semisimple{
+        background-color: $amarillo;
+        padding-bottom: 1em;
+        width: 100%;
+        
+        .titulos{
+            //padding-top: 2em;
+            padding-left: 0;
+            
+            .titulo{
+                color: $negro;
+                font-size: $font-size-large;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+            }
+        }
+        
+        .mas-info{
+            .col{
+                margin-left: 0;
+                margin-right: 0;
+                padding: 0;
+            }
+            .detalles{
+                color: $amarillo-oscuro;
+                text-align: right;
+                
+                .row{
+                    
+                    
+                    .col{
+                        .detalle{
+                            display: block;
+                            width: 100%;
+                            span{
+                                width: 100%;
+                            }
+                        }
+
+                        .detallecuenta{
+                            display: block;
+                            width: 100%;
+                            .cuenta{
+                                &:before{
+                                    content: '*';
+                                }    
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .valores{
+                text-align: left;
+                
+                .row{
+                    
+                    
+                    .col{
+                        .row{
+                            .valor{
+                                color: $negro;
+                                font-size: $font-size-large;
+                                font-weight: bolder;
+
+                                &:before{
+                                    content: '$';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

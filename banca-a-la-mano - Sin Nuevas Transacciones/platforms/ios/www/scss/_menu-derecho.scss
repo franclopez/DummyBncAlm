@@ -1,0 +1,43 @@
+/*
+ * Menu-derecho Bancolombia
+ */
+
+.MenuPopover{
+    background-color: $calm;
+    height: 100%;
+    left: auto;
+    min-width: 50%;
+    right: 0;
+    width: 90%;
+
+    /*
+    ion-content{
+        div{    
+            -webkit-transform:initial !important;
+        }
+    }
+    
+    .scroll-content{
+        .scroll{
+            -webkit-transform:initial !important;
+        }
+    }
+    */
+}
+
+.contenidoPopover{
+    background-color: $calm;
+    right: -1em;
+    top: -0.5em;
+    .disable-user-behavior{
+        .list{
+            .item{
+                background-color: inherit !important;
+                border-style: none;
+                .item-content{
+                    background-color: inherit !important;     
+                }
+            }
+        }
+    }
+}

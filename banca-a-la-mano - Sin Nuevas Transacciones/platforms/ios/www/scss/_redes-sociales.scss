@@ -1,0 +1,75 @@
+/*
+ * Modal - Compartir - Ahorro a la Mano Bancolombia
+ */
+
+@import 'bancolombia';
+
+//Zona Compartir
+
+.MenuCompartir,
+.contenido-texto,
+.btn-compartir {
+    background-color: $color-fondo;
+    border-style: none !important;
+}
+
+.MenuCompartir{
+    height: 100%;
+    width: 80%;
+    .contenido-compartir {
+        top: 0 !important;
+        .contenido-texto{            
+            .texto-compartir {
+                text-align: left;
+                white-space: normal;
+            }            
+        }
+        .btn-compartir {
+            padding-top: 1em;
+            /*.alm-iconFB, .alm-iconTW {
+                &:before {
+                    font-size: 3.5em;
+                }                
+            }*/
+        }
+    }
+}   
+
+.BotonCompartir {
+    height: 1.75em;
+    left: auto;
+    position: relative;
+    right: auto;
+    top: -3em;
+    text-align: center;
+    z-index: 200;
+    .boton-compartir {
+        border-style: none;
+        color: $color-fondo;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        left: auto;
+        height: auto;
+        padding: 1em;
+        position: relative;
+        right: auto;
+        width: 180px; 
+        .nombre-boton {
+            padding-left: 1em;
+            padding-top: 0.5em;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: auto;
+            bottom: auto;
+        }
+    }
+    .color-azul{
+        content: '';
+        background: url('../img/botonBco-azul.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 1.5em;
+    }
+}

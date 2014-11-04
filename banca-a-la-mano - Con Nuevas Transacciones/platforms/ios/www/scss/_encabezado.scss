@@ -1,0 +1,60 @@
+/*
+ * Encabezado Bancolombia
+ */
+@import 'bancolombia';
+
+alm-encabezado {
+    border-style: none;
+    border-width: 0;
+    //margin-bottom: 1em;
+    width: 100%;
+    
+    .Encabezado{
+        padding: 0.25em;
+        .row{
+        
+            .encabezado-vineta {
+                margin-left: -0.5em;
+                font-size: 300%;
+                i{
+                    color: $amarillo;
+                }
+            }
+            
+            .contenido-encabezado{
+                font-size: $font-size-base;
+                font-weight: bold;
+                //vertical-align: baseline;
+                
+                span{
+                    font-weight: bold;
+                    white-space: normal;
+                    vertical-align: sub;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

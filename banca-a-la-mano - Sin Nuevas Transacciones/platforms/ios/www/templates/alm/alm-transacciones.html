@@ -1,0 +1,21 @@
+<ion-modal-view ng-controller="ModalTransaccionesCtrl" class="modal-transacciones">
+    <div class="list header-transacciones">
+        <div class="item item-icon-right boton-cerrar-transacciones">
+            <button class="button button-clear alm-iconClose btn-cerrar" ng-click="modal.hide()"></button>
+        </div>
+        <div>
+            <span class="titulo">Transacciones</span>
+        </div>                
+    </div>
+    <ion-content has-header="true" has-tabs="true" class="list contenido-transacciones" has-bouncing="false" padding="false" scroll="false">
+        <div class="list">
+            <a class="item item-icon-left item-icon-right item-transacciones" ng-repeat="item in modaltransacciones.transacciones" ng-click="ir(item.estado)">
+                <span class="alm-decoradoTitulos color-icono"></span>
+                <span class="titulo-transaccion">{{item.transaccion}}</span>
+                <!--<p class="descripcion-transaccion">{{item.descripcion}}</p>-->
+                <i class="icon alm-decoradoArrow icono-flecha"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-modal-view>
+<!---->

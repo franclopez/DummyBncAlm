@@ -1,0 +1,69 @@
+<ion-nav-bar class="bar-positive nav-title-slide-ios7" align-title="left">
+    <ion-nav-buttons side="left">
+        <button class="button-icon" on-tap="abrirMenuPpal()"><!--ng-click="abrirMenuPpal()"-->
+            <i class="icon alm-iconMenu"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button id="btn-compartir" ng-show="!autorizado" class="button-icon" ng-click="compartir($event)">
+            <i class="icon ion-ios7-upload-outline botonios"></i>
+        </button>
+        <button id="btn-salir" ng-show="autorizado" class="button-icon" ng-click="salir()">
+            <i class="icon alm-iconExit botonios"></i>
+        </button>
+        <button id="btn-bancolombia" class="button-icon button-light bancolombia-boton" ng-click="abrirMenuDerecho($event)">
+            <i class="icon bancolombia-icon"></i>
+        </button>
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-side-menus>
+    <ion-side-menu-content>
+        <ion-nav-view name="alm"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-content class="has-header calm" scroll="true">
+            <!--
+            <ion-header-bar-old class="bar bar-calm cabecera-menu">
+                <div class="row">
+                   <div class="list">
+                        <a class="item">
+                            
+                            <i class="icon alm-iconUser"></i>
+                            
+                            <div class="cabecera-texto">
+                                <p ng-show="autorizado" class="cabecera-usuario">{{menuppal.usuario}}</p>
+                                <p ng-show="!autorizado" class="cabecera-no-usuario">Usuario sin ingresar</p>
+                                <div class="cabecera-detalle" ng-show="autorizado"  ng-show="autorizado">Cuenta *{{menuppal.detalleCuenta}}</div>
+                                <div class="cabecera-detalleNo" ng-show="!autorizado">-</div>
+                            </div>
+                        </a>   
+                   </div>
+                </div>
+            </ion-header-bar-old>
+            -->
+            <ion-header-bar class="bar cabecera-menu">
+                <!--
+                <i class="icon alm-iconUser"></i>
+                -->
+                <div class="cabecera-texto">
+                    <p ng-show="autorizado" class="cabecera-usuario">{{menuppal.usuario}}</p>
+                    <p ng-show="!autorizado" class="cabecera-no-usuario">Ingresa  tu información para acceder a tu cuenta Ahorro a la Mano.                       </p>
+                    <div class="cabecera-detalle" ng-show="autorizado"  ng-show="autorizado">Cuenta *{{menuppal.detalleCuenta}}</div>
+                    <!--Agregado no visible para mantener el aspecto del icono-->
+                    <!--
+                    <div class="cabecera-detalleNo" ng-show="!autorizado">-</div>
+                    -->
+                </div>
+            </ion-header-bar>
+            <!--<div class="titulo-menu" ng-show="autorizado">Menú</div>-->
+            <div class="list">
+                <a nav-clear menu-close class="item item-icon-left item-icon-right" ng-repeat="item in menuppal" ng-click="ir(item.estado)">
+                    <i class="icon alm-decoradoTitulos izquierda"></i>
+                    <div class="row concepto">{{item.titulo}}</div>
+                    <!--<div class="row detalle">{{item.subtitulo}}</div>-->
+                    <i class="icon alm-decoradoArrow derecha"></i>
+                </a>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

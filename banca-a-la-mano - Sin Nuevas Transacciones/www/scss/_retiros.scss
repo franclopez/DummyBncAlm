@@ -1,0 +1,85 @@
+/*
+ * Pagina - Retiros - Ahorro a la Mano Bancolombia
+ */
+
+@import 'bancolombia';
+
+//Zona Retiros 
+
+.contenedor-retiros {
+    background-color: $fondo-claro;
+    font-size: $font-size-base;
+    
+    .contenido-retiros {
+        font-size: $font-size-base;
+        
+        .subheader-retiros {
+            font-size: $font-size-base;
+            height: auto;
+            padding: 1em 0 1em 1em;
+            text-align: left;
+            white-space: normal;
+                    
+            .contenido-retiros {
+                color: $amarillo-oscuro;
+                font-size: $font-size-base;
+                text-align: left;                
+                white-space: normal;
+            }
+        }
+        
+        .imagenes {
+            text-align: center;
+            border-style: none;
+            
+            .img{
+                border-style: none;
+                
+                .imgBC-cajero {
+                    width: 40%;
+                    height: auto;
+                }
+                .imgBC-casa{
+                    width: 60%;
+                    height: auto;
+                    margin-top: 1em;
+                    margin-left: 3em;
+                }
+            }
+        }
+        
+        .pin {
+            box-shadow: none;
+            margin-top: 1em;
+            
+            .boton-generar {
+                border: 0;
+                border-style: none;
+                padding-top: 0;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-bottom: 10%;
+            }    
+        }           
+    }  
+    
+    .mensaje-retiro-finalizar {
+        font-size: $font-size-base;
+        background-color: inherit;
+        text-align: center;
+        
+        .mensaje-instructivo {
+            background-color: inherit;
+            border-style: none;
+            padding: 0.5em;
+            text-align: left;
+            white-space: normal;
+        }
+    }
+    
+    .footer-retirar{  
+        padding: 3em;
+        display: block;
+        text-align: center;
+    }
+}
